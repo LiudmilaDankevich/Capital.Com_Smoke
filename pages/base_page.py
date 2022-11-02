@@ -5,7 +5,7 @@ from selenium.webdriver.support import expected_conditions as EC
 class BasePage:
     def __init__(self, driver):
         self.driver = driver
-        self.base_page = 'https://capital.com/'
+        self.base_page = 'http://capital.com'
 
     def open_base_page(self):
         self.driver.get(self.base_page)
