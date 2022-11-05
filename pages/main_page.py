@@ -13,11 +13,19 @@ class MainPage(BasePage):
         assert auth_text == check_text, f'{auth_text} is not eq {check_text}'
 
     # def should_be_main_page(self):
-    #     self.find_element(MainPageLocator.LOCATOR_FIND_JOB_FORM)
+    #     self.find_element(MainPageLocator.LOCATOR_FIND_JOB_FORM)Trade
     #
-    #
-    # def click_sing_in_button(self):
-    #     sing_in_button = self.find_element(
-    #         MainPageLocator.LOCATOR_SING_IN_BUTTON
-    #     )
-    #     sing_in_button.click()
+    def should_be_trade_button_mp1(self):
+        self.trade_button_mp1_text_is_present()
+        self.trade_button_mp1()
+
+    def trade_button_mp1_text_is_present(self):
+        auth_text = self.find_element(MainPageLocator.LOCATOR_TRADE_BUTTON_MP1_TEXT).text
+        check_text = 'Trade'
+        assert auth_text == check_text, f'{auth_text} is not eq {check_text}'
+
+    def trade_button_mp1(self):
+        trade_button_mp1 = self.find_element(
+            MainPageLocator.LOCATOR_TRADE_BUTTON_MP1
+        )
+        trade_button_mp1.click()

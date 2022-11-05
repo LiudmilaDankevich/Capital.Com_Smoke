@@ -7,5 +7,5 @@ def test_main_page_show(browser):
     main_page.open_base_page()
     sleep(10)
     main_page.main_page_text_is_present()
+    main_page.should_be_trade_button_mp1()
 
-    # main_page.open_login_page()
