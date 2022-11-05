@@ -14,7 +14,7 @@ class MainPage(BasePage):
 
     # def should_be_main_page(self):
     #     self.find_element(MainPageLocator.LOCATOR_FIND_JOB_FORM)Trade
-    #
+
     def should_be_trade_button_mp1(self):
         self.trade_button_mp1_text_is_present()
         self.trade_button_mp1()
