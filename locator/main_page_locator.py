@@ -9,3 +9,4 @@ class MainPageLocator:
                                          '/table/tbody[1]/tr[2]/td[4]/a')
     LOCATOR_TRADE_BUTTON_MP1_TEXT = (By.XPATH, '/html/body/div[1]/div/main/div[2]'
                                          '/div[1]/div/div[4]/table/tbody[1]/tr[1]/td[4]/a')
+    LOCATOR_LOGIN_FORM_OPEN = (By.XPATH, '//*[@id="l_overlay"]/div/div[1]')
