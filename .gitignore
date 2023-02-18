@@ -1,6 +1,5 @@
-../venv
-.venv
-.idea
+.venv/
+.idea/
 log.html
 output.xml
 report.html
